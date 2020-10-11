@@ -15,10 +15,13 @@ html, body {
 
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
 }
 
 p, li, span, label, input, textarea {
-    color: var(--secondaryText)
+    color: var(--secondaryText);
+    font-family: 'Roboto Mono', monospace;
 }
 
 a {
@@ -51,6 +54,74 @@ h6 { font-size: 16px;}
 .main-container {
     width: 1200px;
     margin: 0 auto;
+}
+
+/** SECTION 1*/
+.greeting-wrapper {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    /* border: 2px dashed lightcoral; */
+    min-height: 10em;
+}
+
+.intro-wrapper {
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
+
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-column right-column'
+    ;
+}
+
+.nav-wrapper {
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+}
+
+.dots-wrapper {
+    display: flex;
+}
+
+.browser-dot {
+    background-color: #000;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+#dot-1 {
+    background-color: #FC6058;
+} 
+
+#dot-2 {
+    background-color: #FEC02F;
+}
+
+#dot-3 {
+    background-color: #2ACA3E;
+}
+
+.left-column {
+    grid-area: left-column;
+}
+
+.right-column {
+    grid-area: right-column;
 }
 
 @media screen and (max-width: 1200px) {
