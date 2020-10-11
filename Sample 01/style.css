@@ -74,7 +74,7 @@ h6 { font-size: 16px;}
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 30em;
+    /* grid-template-rows: 3em 30em; */
     grid-template-areas: 
         'nav-wrapper nav-wrapper'
         'left-column right-column'
@@ -83,6 +83,7 @@ h6 { font-size: 16px;}
 
 .nav-wrapper {
     grid-area: nav-wrapper;
+    border-radius: 5px 5px 0 0;
     border-bottom: 1px solid var(--borderColor);
     display: flex;
     justify-content: space-between;
@@ -90,6 +91,15 @@ h6 { font-size: 16px;}
     background-color: var(--mainColor);
 }
 
+#navigation {
+    margin: 0;
+    padding: 10px;
+}
+
+#navigation li {
+    display: inline-block;
+    margin: 0 5px;
+}
 .dots-wrapper {
     display: flex;
 }
@@ -103,6 +113,7 @@ h6 { font-size: 16px;}
 
     box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
+
 
 #dot-1 {
     background-color: #FC6058;
@@ -118,6 +129,33 @@ h6 { font-size: 16px;}
 
 .left-column {
     grid-area: left-column;
+}
+
+#profile-pic {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    /** Below is so image will be within size of the container */
+    object-fit: cover;
+    border: 2px solid var(--borderColor);
+}
+
+.theme-dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #000;
+
+    margin: 5px;
+    
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+    cursor: pointer;
+}
+
+.theme-dot:hover {
+
 }
 
 .right-column {
