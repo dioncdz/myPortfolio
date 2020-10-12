@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+    <link id="theme-style" rel="stylesheet" href="blue.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
     <title>Dion Cadiz Jr</title>
 </head>
@@ -111,7 +114,7 @@
         </div>
     </section>
 
-    <section class="s3">
+    <section class="s2">
         <div class="main-container">
             <h3 style="text-align: center;">Some of my past projects</h3>
 
@@ -135,7 +138,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Tic Tac Toe AI</h6>
                             <p class="post-intro">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-                            <a href="#">Read More</a>
+                            <a href="./post.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -155,9 +158,27 @@
         </div>
     </section>
 
-    <section class="s4">
+    <!-- FORM SECTION -->
+    <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Let's Get In Touch &#128222</h3>
+
+
+            <form id="contact-form" action="">
+                <label for="">Name</label>
+                <input type="text" name="name" class="input-field">
+
+                <label for="">Subject</label>
+                <input type="text" name="subject" class="input-field">
+
+                <label for="">Email</label>
+                <input type="email" name="" class="input-field">
+
+                <label for="">Message</label>
+                <textarea name="message" class="input-field" ></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
 </body>
