@@ -16,6 +16,10 @@
 
 }
 
+* {
+    transition: background-color .2s ease;
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -168,7 +172,7 @@ h6 { font-size: 16px;}
     width: 30px;
     background: #000;
     border-radius: 50%;
-    transition: border-width .2s;
+    transition: transform .2s;
 
     margin: 5px;
     border: 2px solid var(--themeDotBorder);
@@ -178,7 +182,8 @@ h6 { font-size: 16px;}
 }
 
 .theme-dot:hover {
-    border-width: 5px;
+    box-shadow: -1px 5px 5px -1px var(--previewShadow);
+    transform: translateY(-2px);
 }
 
 #light-mode {
