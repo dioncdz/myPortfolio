@@ -107,6 +107,9 @@ h6 { font-size: 16px;}
     padding: 10px;
 }
 
+#navigation a {
+    color: var(--secondaryText)
+}
 #navigation li {
     display: inline-block;
     margin: 0 5px;
@@ -183,15 +186,15 @@ h6 { font-size: 16px;}
 }
 
 #dark-mode {
-    background-color: #264653;
+    background-color: #002855;
 }
 
 #green-mode {
-    background-color: #2a9d8f;
+    background-color: #5c6d70;
 }
 
 #purple-mode {
-    background-color: #5e548e;
+    background-color: #a53860;
 }
 
 #settings-note {
